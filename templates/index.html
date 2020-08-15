@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block content %}
+
+<h3>Uplaod Data for Analysis</h3>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".txt, .csv, .xls, .xlsx">
+        
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".txt, .csv, .xls, .xlsx">
+        
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".txt, .csv, .xls, .xlsx">
+        
+    </form>
+
+    <div class="image-section" style="display:none;">
+        
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Analyse!</button>
+        </div>
+        
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <div id="result">
+
+    </div>
+
+</div>
+
+{% endblock %}
